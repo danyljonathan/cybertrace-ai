@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CYBERTRACE AI — Explainable Attack Intelligence</title>
+  <meta name="description" content="CyberTrace AI reconstructs multi-stage cyber attacks from isolated security events — with evidence, timeline, graph and explanation." />
+  <meta name="theme-color" content="#0B1120" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="site-header">
+      <div class="header-bar container">
+        <a href="/" data-link class="logo" data-testid="header-logo">
+          <span class="logo-mark" data-icon="radar" data-size="18"></span>
+          <span class="logo-text">
+            <span class="logo-title">CYBERTRACE AI</span>
+            <span class="logo-sub">From Isolated Events to Explainable Attack Intelligence</span>
+          </span>
+        </a>
+        <div class="header-actions">
+          <span class="pill-muted hide-lg-down">SYNTHETIC DEMONSTRATION DATA</span>
+          <a href="/" data-link class="status-chip" id="status-chip" data-testid="header-status-chip">
+            <span class="dot" id="status-dot"></span>
+            <span class="mono" id="status-label">LOADING…</span>
+          </a>
+          <a href="/demo" data-link class="btn btn-outline btn-sm hide-sm-down" data-testid="header-quick-demo">
+            <span data-icon="play-circle" data-size="14" class="t-cyan"></span> Run Demo
+          </a>
+          <button class="menu-btn" id="menu-btn" aria-label="Open navigation" data-testid="mobile-nav-trigger">
+            <span data-icon="menu" data-size="16"></span>
+          </button>
+        </div>
+      </div>
+      <nav class="desktop-nav container" id="desktop-nav" data-testid="desktop-nav"></nav>
+    </header>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-head">
+        <span class="mono t-muted drawer-title">CYBERTRACE AI</span>
+        <button class="icon-btn" id="drawer-close" aria-label="Close navigation"><span data-icon="x" data-size="16"></span></button>
+      </div>
+      <nav class="drawer-nav" id="mobile-nav" data-testid="mobile-nav"></nav>
+    </aside>
+
+    <main class="container main" id="view" tabindex="-1"></main>
+
+    <footer class="container footer">
+      <p class="mono">
+        CYBERTRACE AI · HackNex 2026 Internal Qualifier · Problem HNX26PSI03 · Team HNX-INT-035 "SkillIssue" · All data is SYNTHETIC DEMONSTRATION DATA
+      </p>
+    </footer>
+  </div>
+
+  <div class="toaster" id="toaster" aria-live="polite"></div>
+
+  <div class="modal-backdrop" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" data-testid="event-detail-dialog">
+      <button class="icon-btn modal-close" id="modal-close" aria-label="Close"><span data-icon="x" data-size="16"></span></button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <noscript><p style="padding:24px;color:#fff">CyberTrace AI needs JavaScript enabled.</p></noscript>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

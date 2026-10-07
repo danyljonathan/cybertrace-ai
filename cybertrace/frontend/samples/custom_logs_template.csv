@@ -1,0 +1,10 @@
+timestamp,user,device,ip,application,resource,event_type,action,location,usb_device,destination,bytes,baseline
+2026-10-01T09:05:00Z,r.patel,LAPTOP-RP03,10.2.0.14,,,AUTH_LOGIN,LOGIN,"Chennai, IN",,,,true
+2026-10-01T09:20:00Z,r.patel,LAPTOP-RP03,10.2.0.14,file_manager,design_docs,FILE_ACCESS,READ,,,,5200000,true
+2026-10-01T11:02:00Z,r.patel,LAPTOP-RP03,10.2.0.14,mail_client,,NETWORK_CONNECTION,TRANSFER,,,mail.corp.example,48000,true
+2026-10-02T09:11:00Z,r.patel,LAPTOP-RP03,10.2.0.14,,,AUTH_LOGIN,LOGIN,"Chennai, IN",,,,true
+2026-10-02T09:40:00Z,r.patel,LAPTOP-RP03,10.2.0.14,file_manager,design_docs,FILE_ACCESS,READ,,,,3100000,true
+2026-10-03T22:47:00Z,r.patel,LAPTOP-RP03,198.51.100.77,,,AUTH_LOGIN,LOGIN,"Lagos, NG",,,,
+2026-10-03T22:51:00Z,r.patel,LAPTOP-RP03,198.51.100.77,file_manager,payroll_2026,FILE_ACCESS,READ,,,,640000000,
+2026-10-03T22:56:00Z,r.patel,LAPTOP-RP03,,,,USB_CONNECT,CONNECT,,usb_kingston_9f,,,
+2026-10-03T22:58:00Z,r.patel,LAPTOP-RP03,198.51.100.77,file_manager,payroll_2026,FILE_COPY,COPY,,usb_kingston_9f,,640000000,
