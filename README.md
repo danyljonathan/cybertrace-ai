@@ -298,6 +298,12 @@ AI:
 
 The core detection and correlation logic is designed to operate independently of the AI explanation layer.
 
+## Live Demo
+
+🚀 **CyberTrace AI:**  
+https://anomaly-nexus-5.preview.emergentagent.com
+
+The live demo demonstrates security-event correlation, attack-chain reconstruction, evidence, risk assessment, and explainable threat intelligence.
 
 ## Project Structure
 
